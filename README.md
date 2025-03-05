@@ -22,4 +22,6 @@
 # Clone Coding Web
 
 ## 1주차 : Google main page
-### 진행기간 : 3/5 ~ 3/7
+1. 🗓️ 진행 기간 : 3/5 ~ 3/7
+2. 🖲️ 사용 스킬 : HTML, CSS
+3. 🚫 작업 규칙 : 아이콘은 svg 또는 png 사용권장
