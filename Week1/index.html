@@ -7,41 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <a href="#"> <img src="./icon/search-labs.svg" width="24px" height="24px"> </a> <!-- 스타일 css로 옮길 예정-->
-            <a href="#"> <img src="./icon/google-labs.png" width="24px" height="24px"> </a> <!-- 스타일 css로 옮길 예정-->
-            <a href="#"> <img src="./icon/account-icon.png" width="24px" height="24px"></a> <!-- 스타일 css로 옮길 예정-->
+    <!--header-->
+    <nav class="nav-bar">
+        <div class="nav-item">
+            <a href="#" class="nav-text">Gmail</a>
+            <a href="#" class="nav-text">Images</a>
+            <a href="#" class="nav-icon"> <img src="./icon/search-labs.svg"> </a> <!-- 추후 버튼 타입으로 변경 예정 -->
+            <a href="#" class="nav-icon"> <img src="./icon/google-labs.png"> </a> <!-- 추후 버튼 타입으로 변경 예정 -->
+            <a href="#" class="nav-icon"> <img src="./icon/account-icon.png"></a> <!-- 추후 버튼 타입으로 변경 예정 -->
         </div>
     </nav>
 
-    <section>
+    <!--main-->
+    <section class="main-area">
         <div>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <img alt="Google-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         </div>
 
-        <div>
-            <img src="./icon/search-icon.png" width="24px" height="24px"> <!-- 스타일 css로 옮길 예정-->
-            <input type="text">
-            <img src="./icon/mic-icon.svg" width="24px" height="24px"> <!-- 스타일 css로 옮길 예정-->
-            <img src="./icon/img-icon.svg" width="24px" height="24px"> <!-- 스타일 css로 옮길 예정-->
+        <div class="main-item input-area">
+            <div class="input-itemL">
+                <img src="./icon/search-icon.png">
+            </div>
+            <div>
+                <input class="input-box" type="search" placeholder="Google 검색 또는 URL 입력" > <!-- placeoholder로 안내문구 추가 -->
+            </div>
+            <div class="input-itemR">
+                <img src="./icon/mic-icon.svg"> <!--카메라 아이콘 사이에 공간 추가 예정-->
+                <img src="./icon/img-icon.svg">
+            </div>
         </div>
 
-        <div>
+        <div class="main-item">
             <div>
                 <button>Google Search</button>
                 <button>I'm Feeling Lucky</button>
             </div>
         </div>
 
-        <div>
+        <div class="main-item">
             Google offered in: 
             <a href="#"> 한국어 </a>
         </div>
     </section>
 
+    <!--footer-->
     <footer>
         <div>
             South Korea
