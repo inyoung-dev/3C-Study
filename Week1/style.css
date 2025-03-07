@@ -139,6 +139,7 @@ body {
   position: absolute;
   bottom: 0;
   width:100%;
+  background-color: #f2f2f2;
 }
 
 /*footer 첫번째 라인*/
@@ -146,14 +147,12 @@ body {
   padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
   font-size: 15px;
-  color: rgba(0,0,0,.54);
 }
 
 /*footer 두번째 라인*/
 .second-line{
   display: flex;
   padding: 15px 30px;
-  color: rgba(0,0,0,.54);
 }
 .second-itemR{
   position: absolute;
@@ -165,6 +164,7 @@ body {
   text-decoration: none;
   color: black;
   margin-right: 15px;
+  font-size: 15px;
 }
 
 .second-item a:hoveR{
@@ -175,6 +175,7 @@ body {
   text-decoration: none;
   color: black;
   margin-right: 15px;
+  font-size: 15px;
 }
 
 .second-itemR a:hoveR{
