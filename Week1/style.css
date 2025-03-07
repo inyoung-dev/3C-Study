@@ -2,10 +2,11 @@
 body {
   height: 100%;
   margin: 0;
+  font-family: "Google Sans Text", Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
 }
 
-/*nav*/
-
+/*nav(상단 우측)*/
 .nav-bar {
   height: 48px;
 }
@@ -14,32 +15,40 @@ body {
   justify-content: flex-end;
   margin: 10px;
 }
-
 .nav-item a{
   text-decoration: none;
   margin-right: 16px;
+  padding-top: 6px;
 }
-
+.nav-item button{
+  background-color: transparent;
+  border-color: transparent;
+  margin-right: 13px;
+}
+.nav-item button:hover{
+  cursor: pointer;
+  border-radius: 40%;
+  background-color: #d2d2d2;
+}
 .nav-text {
   font-size: 15px;
   color: black;
 }
-
 .nav-text:hover {
   text-decoration: underline;
 }
-
 .nav-icon img{
   width: 20px;
   height: 20px;
 }
 
-/*main*/
+/*main google img*/
 .main-area {
   text-align: center;
   margin-top: 180px;
 }
 
+/*main input box*/
 .main-item {
   margin-top: 20px;
 }
@@ -52,9 +61,19 @@ body {
   width: 584px;
   height: 52px;
   border-radius: 24px;
-  border: 1px solid #dfe1e5;
+  border: 1px solid #ecedef;
   padding-left: 50px;
-  padding-right: 70px;
+  padding-right: 95px;
+  background-color: #ecedef;
+}
+
+.input-box:hover{
+  background-color: #d2d2d2;
+}
+
+.input-box:focus{
+  border-color: #d2d2d2;
+  outline: none;
 }
 
 .input-area img{
@@ -70,5 +89,94 @@ body {
 
 .input-itemR {
   position: relative;
-  right: 70px;
+  right: 100px;
 }
+
+.input-itemR button{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.input-itemR button:hover{
+  cursor: pointer;
+}
+
+/*main button*/
+.main-button{
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  padding: 0 16px;
+  margin: 11px 4px;
+}
+
+.main-button:hover{
+  box-shadow:0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+  cursor: pointer;
+}
+
+/*main language*/
+.lang-area{
+  font-size: 14px;
+}
+.language{
+  text-decoration: none;
+  padding: 0 3px;
+  color: #1a0dab;
+}
+.language:hover{
+  text-decoration: underline;
+}
+
+/*footer 영역*/
+.footer-area{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+
+/*footer 첫번째 라인*/
+.first-line{
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0,0,0,.54);
+}
+
+/*footer 두번째 라인*/
+.second-line{
+  display: flex;
+  padding: 15px 30px;
+  color: rgba(0,0,0,.54);
+}
+.second-itemR{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.second-item a{
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+
+.second-item a:hoveR{
+  text-decoration: underline;
+} 
+
+.second-itemR a{
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+
+.second-itemR a:hoveR{
+  text-decoration: underline;
+} 
