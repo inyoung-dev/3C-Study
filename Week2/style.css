@@ -1,0 +1,50 @@
+/* 전체 스타일 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* 헤더 스타일 */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* 네비게이션 */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img{
+  width: 180px;
+  height:70px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.language {
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 122px;
+  margin-right: 10px;
+}
+
+.login-btn {
+  background: red;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
