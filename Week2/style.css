@@ -4,7 +4,19 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   background-color: black;
+  background-image: url("./img/background-top.jpg");
 }
+
+/* 어두운 오버레이 */
+body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 
 /* 헤더 스타일 */
 header {
@@ -47,4 +59,69 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* 메인 섹션 */
+.main-sec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 메인 텍스트 */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  max-width: 450px; /* 줄바꿈 위치 조정 */
+  line-height: 1.2; /* 줄 간격 조정 */
+  margin: 0 auto;
+}
+
+.con-text1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.con-text2 {
+  font-size: 15px;
+  margin-top: 35px;
+}
+
+/* 이메일 입력 폼 */
+.content form {
+  margin-top: 20px;
+}
+
+.con-input {
+  padding: 15px;
+  width: 412px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.start-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 167px;
+  height: 58px;
 }
