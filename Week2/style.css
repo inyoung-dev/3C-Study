@@ -50,6 +50,8 @@ header {
   width: 122px;
   height: 32px;
   margin-right: 10px;
+  background-clip: padding-box;
+  border: 1px solid gray;
 }
 
 .login-btn {
@@ -103,43 +105,48 @@ header {
   margin-top: 35px;
 }
 
-/* 이메일 입력 폼 */
-.content form {
-  margin-top: 20px;
+/* 이메일 입력 & 시작하기*/
+.email-area {
+  margin: 0;
+  padding-top: 16px;
+  position: relative;
+  width: 100%;
+  display: flex;
   align-items: center;
 }
 
-.con-input {
-  padding: 15px;
-  width: 412px;
-  height: 30px;
+.email-area input {
+  width: 460px;
+  height: 56px;
+  border: none;
+  background-color: transparent;
   border: 1px solid gray;
   border-radius: 5px;
-  font-size: 16px;
-  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
-.start-btn {
+.email-area input::placeholder {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-area button {
+  width: 150px;
+  height: 56px;
   background: red;
   color: white;
   border: none;
-  padding: 15px 20px;
   font-size: 23px;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 15px;
-  width: 167px;
-  height: 62px;
+  box-sizing: border-box;
 }
-
-/**/
-
-
 /* 배너 컨테이너 */
 .banner-container {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -149,5 +156,61 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: 50px auto;
-  background: black; /* 기본 배경 */
+  background: transparent;
+}
+
+.mid-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #211C40;
+  width: 1300px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.mid-textItem{
+  margin-left: 20px;
+}
+
+.mid-btnItem{
+  margin-right: 40px;
+}
+
+.mid-textItem h2{
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.mid-textItem p{
+  font-size: 15px;
+}
+
+.mid-btn{
+  width: 120px;
+  height: 36px;
+  background: gray;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* 반응형 */
+@media (min-width: 600px) {
+  .reponsive {
+    webkit-align-items: center;
+    webkit-box-align: center;
+    ms-flex-align: center;
+    align-items: center;
+  }
 }
