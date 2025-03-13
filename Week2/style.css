@@ -198,6 +198,109 @@ header {
 }
 
 
+/* 메인 하단 영역*/
+.bot-sec{
+  padding-left: 350px;
+  width: 100%;
+}
+
+.bot-sec p{
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+/*스와이퍼 영역*/
+/* 스와이퍼 전체 컨테이너 */
+.slider-container {
+  position: relative;
+  max-width: 1300px; /* 너비 조정 */
+  overflow: hidden;
+  text-align: center; /* 제목 정렬 */
+}
+
+/* 가로 슬라이드 영역 */
+.poster-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 포스터 리스트 */
+.poster-area {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0;
+  list-style: none;
+}
+
+/* 포스터 카드 */
+.poster-card {
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* 이미지 스타일 */
+.poster-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 순위 넘버 */
+.poster-number {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 15px;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out; /* 부드러운 등장/사라짐 효과 */
+  border-radius: 5px; /* 둥근 모서리 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 130px;
+}
+
+/* 버튼이 보이지 않을 때 */
+.slider-btn.hidden {
+  opacity: 0;
+  pointer-events: none; /* 클릭 불가능하게 설정 */
+}
+
+/* 버튼 호버 효과 */
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 왼쪽 버튼 위치 */
+.prev-btn {
+  left: 10px;
+}
+
+/* 오른쪽 버튼 위치 */
+.next-btn {
+  right: 10px;
+}
 
 
 
@@ -206,11 +309,3 @@ header {
 
 
 /* 반응형 */
-@media (min-width: 600px) {
-  .reponsive {
-    webkit-align-items: center;
-    webkit-box-align: center;
-    ms-flex-align: center;
-    align-items: center;
-  }
-}
