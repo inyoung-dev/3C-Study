@@ -202,27 +202,24 @@ header {
 .bot-sec{
   padding-left: 350px;
   width: 100%;
-}
-
-.bot-sec p{
   font-size: 30px;
   font-weight: bold;
   position: relative;
 }
 
 /*스와이퍼 영역*/
-/* 스와이퍼 전체 컨테이너 */
-.slider-container {
+/* 슬라이더 전체 컨테이너 */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  max-width: 1300px; /* 너비 조정 */
-  overflow: hidden;
-  text-align: center; /* 제목 정렬 */
+  max-width: 1050px; /* 📌 포스터가 4.2~4.3개 보이도록 설정 */
+  margin: auto;
 }
 
-/* 가로 슬라이드 영역 */
-.poster-wrapper {
-  display: flex;
-  justify-content: center;
+/* 포스터를 감싸는 컨테이너 */
+.slider-container {
   overflow: hidden;
   width: 100%;
 }
@@ -238,13 +235,13 @@ header {
 /* 포스터 카드 */
 .poster-card {
   position: relative;
-  min-width: 200px;
-  height: 300px;
+  min-width: 230px; /* 📌 포스터 크기 조정 */
+  height: 340px;
   margin-right: 10px;
   border-radius: 10px;
 }
 
-/* 이미지 스타일 */
+/* 포스터 이미지 스타일 */
 .poster-card img {
   width: 100%;
   height: 100%;
@@ -261,46 +258,46 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* 좌우 버튼 스타일 - 포스터 바깥에 배치 */
 .slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
+  background-color: #373A40;
   color: white;
   border: none;
   cursor: pointer;
-  padding: 15px;
-  font-size: 15px;
+  padding: 5px;
+  font-size: 20px;
   z-index: 10;
-  transition: opacity 0.3s ease-in-out; /* 부드러운 등장/사라짐 효과 */
-  border-radius: 5px; /* 둥근 모서리 */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
+  width: 30px;
   height: 130px;
+  position: absolute;
 }
 
 /* 버튼이 보이지 않을 때 */
 .slider-btn.hidden {
   opacity: 0;
-  pointer-events: none; /* 클릭 불가능하게 설정 */
+  pointer-events: none;
+}
+
+/* 왼쪽 버튼 위치 - 포스터 왼쪽 바깥 */
+.prev-btn {
+  left: -85px;
+}
+
+/* 오른쪽 버튼 위치 - 포스터 오른쪽 바깥 */
+.next-btn {
+  right: -70px;
 }
 
 /* 버튼 호버 효과 */
 .slider-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #686D76;
 }
 
-/* 왼쪽 버튼 위치 */
-.prev-btn {
-  left: 10px;
-}
-
-/* 오른쪽 버튼 위치 */
-.next-btn {
-  right: 10px;
-}
 
 
 
