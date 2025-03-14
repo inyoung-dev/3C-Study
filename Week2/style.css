@@ -400,5 +400,87 @@ header {
   margin-left: 10px; /* 질문과 아이콘 사이 약간 간격 */
 }
 
+/* ------------------------ */
+/* 하단 이메일 영역 스타일 */
+/* ------------------------ */
+.bottom-reponsive {
+  background-color: black; /* 상단 배경과 연결감 주기 위해 검정 */
+  padding: 40px 20px;      /* 위아래 여백 */
+  text-align: center;
+}
+.bottom-email-inputBox{
+  width: 500px;
+}
 
+/* 이메일 안내 문구 */
+.bottom-wrap {
+  max-width: 800px;
+  margin: 0 auto;   /* 가운데 정렬 */
+}
+
+.bottom-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* 기존 .email-area를 재활용하되, 하단용으로만 살짝 조정 */
+.bottom-email {
+  justify-content: center; /* 가운데 정렬 */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------------------------ */
+/* 푸터 영역 스타일 */
+/* ------------------------ */
+.site-footer {
+  color: #757575;             /* 넷플릭스 푸터처럼 연한 회색 */
+  font-size: 14px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 문의 전화 */
+.footer-call {
+  margin-bottom: 20px;
+}
+
+/* 링크 목록 */
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap; /* 화면 좁아지면 다음 줄로 넘어감 */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px; /* 아래쪽 여백 */
+}
+
+.footer-links li a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* 회사 정보 등 텍스트 */
+.footer-info {
+  line-height: 1.6;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: #757575;
+  text-decoration: underline;
+  font-size: 14px;
+}
 /* 반응형 */
