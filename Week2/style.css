@@ -214,8 +214,10 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  max-width: 1050px; /* 📌 포스터가 4.2~4.3개 보이도록 설정 */
+  max-width: 1050px; /* 포스터가 4.2ㅐ 보이도록 설정 */
   margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
 }
 
 /* 포스터를 감싸는 컨테이너 */
@@ -238,7 +240,6 @@ header {
   min-width: 230px; /* 📌 포스터 크기 조정 */
   height: 340px;
   margin-right: 10px;
-  border-radius: 10px;
 }
 
 /* 포스터 이미지 스타일 */
@@ -246,6 +247,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 /* 순위 넘버 */
@@ -299,10 +301,104 @@ header {
 }
 
 
+/*가입 이유 카드 영역*/
+ /* 카드 전체를 감싸는 컨테이너 */
+.reason-container {
+  display: flex;
+  justify-content: space-between;  /* 카드 사이 간격 */
+  gap: 15px;                       /* 카드 간 간격 */
+  max-width: 1300px;
+  margin: 0 300px;                  /* 가운데 정렬 */
+  padding: 0 50px;           /* 좌우 여백(원하는 만큼 조절) */
+  box-sizing: border-box;
+  margin-top: 2rem;
+  margin-bottom: 4.5rem;
+}
+
+/* 개별 카드 */
+.reason-card {
+  flex: 1;
+  position: relative;            /* 아이콘 절대 위치를 위해 relative */
+  background-color: #211C40;     /* 보라색 배경 */
+  border-radius: 10px;
+  padding: 30px 20px 70px;       /* 아래쪽 공간(70px) 확보 → 아이콘 겹치지 않게 */
+  text-align: left;
+  box-sizing: border-box;
+  min-width: 280px;        /* 이전 230px에서 증가 */
+  height: 310px;           /* 이전 340px에서 증가 */
+}
+
+/* 아이콘 박스 (원형) */
+.icon-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
+/* 카드 제목 */
+.reason-card h3 {
+  margin: 0 0 12px;      /* 제목 아래 여백 */
+  font-size: 1.4rem;     /* 두 번째 사진처럼 약간 크게 */
+  font-weight: 500;
+}
+
+/* 카드 설명 */
+.reason-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+  font-weight: 400;
+  margin: 0;             /* 불필요한 여백 제거 */
+}
 
 
+/*question-container영역*/
+
+/* FAQ 리스트 전체 */
+.faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 350px;
+  margin-top: 2rem;
+  margin-bottom: 4.5rem;
+  max-width: 1200px; /* 원하는 너비로 조절 */
+}
+
+/* FAQ 개별 항목(질문) */
+.faq-item {
+  background-color: #333;   /* 검정에 가까운 배경 */
+  margin: 8px 0;           /* 항목 간격 */
+}
+
+/* 질문 버튼 */
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-align: left;
+  padding: 25px;
+  font-size: 23px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;       /* "+" 아이콘 절대 위치 */
+  display: flex;
+  justify-content: space-between; /* 질문과 아이콘이 양 끝으로 */
+  align-items: center;
+}
+
+/* "+" 아이콘 */
+.plus-icon {
+  font-size: 25px;
+  margin-left: 10px; /* 질문과 아이콘 사이 약간 간격 */
+}
 
 
 /* 반응형 */
