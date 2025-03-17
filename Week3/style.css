@@ -1,5 +1,6 @@
 /* 전체 스타일 */
-body { margin: 0; font-family: Arial, sans-serif; color: white; background-color: black; word-break: keep-all; }
+body { margin: 0; font-family: Arial, sans-serif; color: white; background-color: black; word-break: keep-all; 
+       background: url('./img/background-top.jpg') }
 
 /* 어두운 오버레이 */
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
@@ -14,4 +15,8 @@ header { position: absolute; top: 0; width: 100%; }
  /* 배경 이미지 */ 
 .main { height: 100vh; background: url('./img/background-top.jpg'); background-size: cover; background-position: center; }
 
+/* 로그인 컨테이너 영역 */
+.login-container { position: relative; width: 100%; height: 100%; }
 
+/* 로그인 박스 */
+.login-box { background: rgba(0, 0, 0, 0.75); padding: 60px;width: 350px;border-radius: 4px;}
