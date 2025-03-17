@@ -1,0 +1,17 @@
+/* 전체 스타일 */
+body { margin: 0; font-family: Arial, sans-serif; color: white; background-color: black; word-break: keep-all; }
+
+/* 어두운 오버레이 */
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+
+/* 헤더 */
+header { position: absolute; top: 0; width: 100%; }
+
+/* 네비게이션 */
+.navbar { margin-left: 22rem; margin-top: 10px; }
+.logo img { width: 180px; height: 70px; }
+
+ /* 배경 이미지 */ 
+.main { height: 100vh; background: url('./img/background-top.jpg'); background-size: cover; background-position: center; }
+
+
