@@ -22,13 +22,26 @@ header { position: relative; z-index: 2;}
 .login-container { position: relative; z-index: 2; display: flex; justify-content: center; align-items: center; min-height: 90vh; }
 /* 로그인 박스 */
 .login-box { background: rgba(0, 0, 0, 0.75); padding: 60px;width: 350px;border-radius: 4px; }
-.login-box h1 { color: rgb(255, 255, 255); font-size: 2rem; font-weight: 700; text-align: start; user-select: text; }
+.login-box h1 { color: rgb(255, 255, 255); font-size: 2rem; font-weight: 700; text-align: start; user-select: text;}
+.id-box { position: relative; margin-top: 3rem; }
 #email-input { box-sizing: border-box; width: 322px; height: 50px; color: white; font-size: 15px; background-color: transparent;
-       border: 1px solid gray; border-radius: 5px; margin-top: 3rem; margin-bottom: 10px; }
+       border: 1px solid gray; border-radius: 5px; padding: 0 12px; margin-bottom: 10px; }
 #pw-input { box-sizing: border-box; width: 322px; height: 50px; color: white; font-size: 15px; background-color: transparent;
-       border: 1px solid gray; border-radius: 5px; margin-top: 3px; margin-bottom: 10px; } 
+       border: 1px solid gray; border-radius: 5px; padding: 0 12px; margin-bottom: 10px; } 
 .login-btn { box-sizing: border-box; width: 322px; height: 40px; border: 1px solid red; background-color: #e50914;  color: #fff; 
        font-size: 16px; cursor: pointer; border-radius: 4px; margin-top: 4px;}
+/*id-box & pw-box 라벨*/
+.id-box, .pw-box { position: relative; }
+/*id_error & pw_error*/
+#id_error, #pw_error { font-size: 13px; color: red; margin-bottom: 10px;}
+/*pw 토글 버튼*/
+.toggle-password { display: none; position: absolute; top: 42%; right: 38px; transform: translateY(-50%); background: transparent; border: none; color: #fff; font-size: 14px; cursor: pointer; z-index: 3; }
+/* 라벨(기본 상태: 입력창 가운데) */
+.float-label { position: absolute; left: 16px; top: 40%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.5); pointer-events: none;  /* 클릭 시 input에 포커스 */ transition: 0.2s ease all; font-size: 15px; }
+/* .filled 상태: 라벨을 적당히 위로 이동 */
+.id-box.filled .float-label,
+.pw-box.filled .float-label { top: 4px; transform: none; font-size: 12px; color: rgba(255, 255, 255, 0.8);}
+/* 로그인 박스 하단*/
 .or-text { width: 322px; margin: 20px 0px; color: rgba(128, 128, 128, 0.9); font-size: 1rem; font-weight: 400; text-align: center; }
 .loginCode-btn {box-sizing: border-box; width: 322px; height: 40px; border: 1px solid transparent; background-color: rgba(128, 128, 128, 0.4);  color: #fff; 
        font-size: 16px; cursor: pointer; border-radius: 4px;}
