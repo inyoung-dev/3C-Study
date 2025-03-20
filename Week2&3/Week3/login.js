@@ -77,3 +77,27 @@ togglePassword.addEventListener("click", () => {
     togglePassword.textContent = "⌀";
   }
 });
+
+
+// "로그인 코드 사용하기" 버튼
+const loginCodeBtn = document.querySelector(".loginCode-btn");
+// 기존 로그인 폼
+const loginForm = document.querySelector(".login_form");
+// 새로 만든 "로그인 코드" 폼
+const loginCodeForm = document.querySelector(".login_code_form");
+
+// "비밀번호 사용하기" 버튼
+const usePwBtn = document.querySelector(".usePw-btn");
+
+// 1) "로그인 코드 사용하기" 클릭 -> 기존 폼 숨기고, 코드 폼 보이기
+loginCodeBtn.addEventListener("click", () => {
+  loginForm.style.display = "none";
+  loginCodeForm.style.display = "block";
+});
+
+// 2) "비밀번호 사용하기" 클릭 -> 코드 폼 숨기고, 기존 폼 보이기
+usePwBtn.addEventListener("click", () => {
+  loginCodeForm.style.display = "none";
+  loginForm.style.display = "block";
+});
+
