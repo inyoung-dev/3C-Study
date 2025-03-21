@@ -4,7 +4,7 @@ body { font-family: Arial, sans-serif; color: white; background-color: black; wo
        background: url('./img/background-top.jpg'); margin: 0; padding: 0;}
 
 /* 어두운 오버레이 */
-.overlay { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 99%; background: rgba(0, 0, 0, 0.6); }
+.overlay { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 
 /* 헤더 */
 header { position: relative; z-index: 2;}
@@ -84,6 +84,7 @@ header { position: relative; z-index: 2;}
 
 
 /* 반응형 */
+
 /*1024px ~ 601px*/
 @media (max-width: 1024px) and (min-width: 601px) {
 
@@ -91,6 +92,9 @@ header { position: relative; z-index: 2;}
        .navbar {
               margin-left: 1rem;
               /* 예: 22rem -> 4rem */
+       }
+       .overlay {
+              height: 99%;
        }
 
        /* 로그인 박스: 중앙 정렬, 폭 약간 넓힘 */
