@@ -79,6 +79,21 @@ togglePassword.addEventListener("click", () => {
 });
 
 
+//로그인 조건 달성되지 않았을 경우 PW에러 발생하기
+const loginBtn = document.querySelector(".login-btn"); // 로그인 버튼 요소 선택
+//버튼 클릭시 비밀번호 길이 검사 후 에러 발생
+loginBtn.addEventListener("click", () => {
+  const pwLength = pwInput.value.trim().length;
+  if (pwLength < 4 || pwLength > 60) {
+    pwInput.classList.add("invalid");
+    pwError.textContent = "Ⓧ 비밀번호는 4~60자 사이여야 합니다.";
+  } else {
+    pwInput.classList.remove("invalid");
+    pwError.textContent = "";
+  }
+});
+
+
 // "로그인 코드 사용하기" 버튼
 const loginCodeBtn = document.querySelector(".loginCode-btn");
 // 기존 로그인 폼
