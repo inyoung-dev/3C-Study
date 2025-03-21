@@ -4,7 +4,7 @@ body { font-family: Arial, sans-serif; color: white; background-color: black; wo
        background: url('./img/background-top.jpg'); margin: 0; padding: 0;}
 
 /* 어두운 오버레이 */
-.overlay { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+.overlay { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 99%; background: rgba(0, 0, 0, 0.6); }
 
 /* 헤더 */
 header { position: relative; z-index: 2;}
@@ -82,4 +82,166 @@ header { position: relative; z-index: 2;}
 .footer-info p a {color:rgba(255, 255, 255, 0.7);}
 
 
+
 /* 반응형 */
+/*1024px ~ 601px*/
+@media (max-width: 1024px) and (min-width: 601px) {
+
+       /* 헤더 로고 위치 살짝 조정 (필요 시) */
+       .navbar {
+              margin-left: 1rem;
+              /* 예: 22rem -> 4rem */
+       }
+
+       /* 로그인 박스: 중앙 정렬, 폭 약간 넓힘 */
+       .login-box {
+              width: 70%;
+              max-width: 500px;
+              margin: 40px auto;
+              /* 수직 40px, 좌우 auto */
+              height: auto;
+              /* 고정 600px 대신 내용에 맞춤 */
+              border-radius: 4px;
+              /* 둥근 모서리는 유지 */
+              padding: 40px 30px;
+       }
+
+       /* 입력창/버튼 100% 폭 */
+       #email-input,
+       #pw-input,
+       .login-btn,
+       .loginCode-btn,
+       .loginCodeSubmit-btn,
+       .usePw-btn {
+              width: 100%;
+              max-width: 100%;
+       }
+
+       /* 푸터: 좌우 패딩 축소, 링크는 왼쪽 정렬 */
+       .footer-container {
+              padding: 0 3rem;
+              text-align: left;
+              padding-top: 4rem;
+       }
+
+       .footer-links ul {
+              flex-direction: row;
+              /* 가로 배치 */
+              flex-wrap: wrap;
+              /* 화면 줄어들면 줄바꿈 */
+              justify-content: flex-start;
+              /* 왼쪽 정렬 */
+       }
+
+       .footer-links li {
+              width: auto;
+              /* 한 줄에 자연스럽게 */
+       }
+}
+
+/* 600px이하 (모바일) */
+@media (max-width: 600px) {
+/*오버레이 제거 (원하면 주석 해제)*/
+       .overlay {
+              display: none !important;
+       }
+       /* 헤더 로고 위치 살짝 조정 (필요 시) */
+       .navbar {
+              margin-left: 1rem;
+       }
+
+       /* 배경을 완전 검정 */
+       body {
+              background: #000 !important;
+       }
+
+       /* 로그인 컨테이너 전체 높이 활용 */
+       .login-container {
+              min-height: auto;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              /* 위쪽부터 */
+       }
+
+       /* 로그인 박스: 화면 꽉 채우기, border-radius 제거 */
+       .login-box {
+              width: 100%;
+              max-width: 100%;
+              border-radius: 0;
+              margin: 0;
+              padding: 20px 20px 30px;
+              /* 아래쪽 약간만 여백 */
+              height: auto;
+       }
+
+       /* 입력창/버튼 100% 폭 */
+       #email-input,
+       #pw-input,
+       .login-btn,
+       .loginCode-btn,
+       .loginCodeSubmit-btn,
+       .usePw-btn {
+              width: 100%;
+              max-width: 100%;
+       }
+
+       /* 푸터: 위쪽 여백을 조금 두어 구분 */
+       footer.site-footer {
+              margin-top: 20px;
+       }
+
+       .footer-container {
+              padding: 20px;
+              text-align: left;
+              /* 왼쪽 정렬 */
+       }
+
+       /* “질문이 있으신가요?” 문구 */
+       .footer-call {
+              margin-bottom: 15px;
+       }
+
+
+
+       /* 언어 선택 */
+       .footer-lang {
+              margin-bottom: 15px;
+              text-align: left;
+       }
+
+       /* 회사 정보 (작게) */
+       .footer-info {
+              font-size: 12px;
+              line-height: 1.3;
+       }
+
+       .footer-info p {
+              margin: 3px 0;
+              text-align: left;
+       }
+       
+}
+
+@media (max-width: 600px) {
+       /* ... 이미 작성한 모바일용 스타일들 ... */
+     
+       /* 푸터 링크를 2열 x 3행으로 배치 */
+       .footer-links ul {
+         display: grid;
+         grid-template-columns: 1fr 1fr;  /* 2열 */
+         column-gap: 10px;               /* 열 간격 */
+         row-gap: 8px;                   /* 행 간격 */
+         justify-content: flex-start;    /* 왼쪽 정렬 (원하시면 center로 변경 가능) */
+         align-items: start;            
+         margin-bottom: 15px;            /* 아래 여백 */
+       }
+     
+       .footer-links li {
+         width: auto;        /* 한 칸에 자연스러운 폭 */
+         text-align: left;   /* 링크 텍스트 왼쪽 정렬 (원하시면 center 가능) */
+         padding-right: 10rem;
+       }
+     }
