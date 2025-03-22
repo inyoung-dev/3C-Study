@@ -1,0 +1,6 @@
+/* body 전체 영역 */
+body { margin: 0; display: flex; justify-content: space-between; }
+
+/* header 영역 */
+.logoImg { width: 103px; height: 29px;}
+
